@@ -13,15 +13,13 @@ so thats why i gave the body an ID to override it*/
     
 }
 
-
+/*styling for each section of the page*/
 #header{
     background: hsl(193, 100%, 96%);
     padding: 30px;
 }
 
-#main{
-    padding: 30px;
-}
+
 
 #topnav{
     display: flex;
@@ -30,7 +28,7 @@ so thats why i gave the body an ID to override it*/
 }
 
 #homelogo{
-    width: 25vw;
+    width: 30vw;
 }
 
 #Tryitbutton{
@@ -59,7 +57,7 @@ so thats why i gave the body an ID to override it*/
 }
 
 #intro_col .btn{
-    background: rgb(252, 80, 109);
+    background: hsl(322, 100%, 66%);
     color: white;
     font-size: 12px;
     border-radius: 20px;
@@ -77,6 +75,10 @@ so thats why i gave the body an ID to override it*/
 
 /*styling the main rows*/
 
+#main{
+    padding: 30px 30px 50px 30px;
+}
+
 #row1, #row2, #row3{
     margin: 30px 0;
     box-shadow: 4px 4px 10px rgb(169, 168, 168), -4px -4px 10px rgb(169, 168, 168);
@@ -90,12 +92,124 @@ so thats why i gave the body an ID to override it*/
 }
 
 #row1col img, #row2col img, #row3col img{
-    width: 70%;
+    width: 100%;
     
 }
 
 
 
+/* styling for d footer section*/
+
+#footer{
+    padding: 100px 30px 20px 30px;
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    align-items: stretch;
+}
+#contact, #links, #endcredit{
+    margin: 20px 0;
+    
+}
+
+#location, #phone, #email{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+/*givind location and email paragraph a bottom margin excluding email paragraph*/
+#location, #phone{
+    margin-bottom: 15px;
+}
+
+#location img, #phone img, #email img{
+    
+    margin-top: 4px;
+    margin-right: 20px;
+}
+
+#location p, #phone p, #email p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+}
+
+#links{
+    width: 80%;
+   
+}
+
+#firstlinks, #secondlinks{
+    display: flex;
+    flex-direction: column;
+}
+
+#firstlinks a, #secondlinks a{
+    color: white;
+    margin-bottom: 10px;
+}
+
+#media{
+    margin-bottom: 20px;
+}
+
+#media a{
+    margin-right: 5px;
+    
+}
+
+#media a span{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    transition: all 0.5s;
+}
+
+#media a span:hover{
+    border: 2px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+}
+
+#endcredit{
+    text-align: center;
+    position: relative;
+    
+}
+
+#endcredit p{
+    color: white;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for the responsieve screen of sm*/
+@media screen and (min-width:578px){
+    #row1col img, #row2col img, #row3col img{
+        width: 70%;
+        
+    }
+}
+    
 
 /*for the responsieve screen of md*/
 @media screen and (min-width:768px){
@@ -109,6 +223,28 @@ so thats why i gave the body an ID to override it*/
         margin-right: auto;
         width: 70%;
     }
+    #links{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    #contact, #links, #endcredit{
+        margin: 0;
+       
+    }
+    #endcredit{
+        text-align: left;
+        height: 100%;
+    }
+    
+    #endcredit p{
+        position: absolute;
+        bottom: 0;
+    }
+    #firstlinks, #secondlinks{
+        text-align: left;
+    }
 }
 
 
@@ -117,7 +253,7 @@ so thats why i gave the body an ID to override it*/
 /*for the responsieve screen of lg*/
 @media screen and (min-width:992px){
     #row1col img, #row2col img, #row3col img{
-        width: 70%;
+        width: 80%;
     }
     #intro_col {
         margin-top: 0;
