@@ -13,6 +13,10 @@ so thats why i gave the body an ID to override it*/
     
 }
 
+#wrapcon{
+    max-width: 1000px;
+}
+
 /*styling for each section of the page*/
 #header{
     background: hsl(193, 100%, 96%);
@@ -76,14 +80,17 @@ so thats why i gave the body an ID to override it*/
 /*styling the main rows*/
 
 #main{
-    padding: 30px 30px 50px 30px;
+    
+    padding: 30px 30px 40px 30px;
 }
 
 #row1, #row2, #row3{
     margin: 30px 0;
-    box-shadow: 4px 4px 10px rgb(169, 168, 168), -4px -4px 10px rgb(169, 168, 168);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(169, 168, 168), -2px -2px 5px rgb(169, 168, 168);
     display: flex;
     align-items: center;
+
 }
 
 #row1col, #row2col, #row3col{
@@ -96,6 +103,36 @@ so thats why i gave the body an ID to override it*/
     
 }
 
+#floatdiv{
+    
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(169, 168, 168), -1px -1px 3px rgb(169, 168, 168);
+    text-align: center;
+    padding: 20px 20px;
+    position: relative;
+    bottom: -100px;
+}
+
+#floatdiv p{
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+#floatdiv .btn{
+    background: hsl(322, 100%, 66%);
+    color: white;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 10px 30px;
+    margin: 10px 0;
+    
+}
+
+
+
 
 
 /* styling for d footer section*/
@@ -104,8 +141,12 @@ so thats why i gave the body an ID to override it*/
     padding: 100px 30px 20px 30px;
     background-color: hsl(192, 100%, 9%);
     display: flex;
+    flex-direction: column;
     align-items: stretch;
 }
+
+
+
 #contact, #links, #endcredit{
     margin: 20px 0;
     
@@ -244,6 +285,10 @@ so thats why i gave the body an ID to override it*/
     }
     #firstlinks, #secondlinks{
         text-align: left;
+    }
+    #floatdiv{
+        width: 400px;
+        margin: 0 auto;
     }
 }
 
